@@ -1,0 +1,29 @@
+.singleFlag-box{
+    margin:1rem;
+    border-top: 2px solid grey;
+    padding:10px;
+
+}
+.singleFlag-box img{
+    height: auto;
+    object-fit: contain;
+    width:238px;
+}
+.country-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+@media (max-width:500px){
+    .country-grid{
+        grid-template-columns: 1fr;
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
