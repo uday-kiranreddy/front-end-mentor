@@ -19,6 +19,7 @@ function Country() {
   useEffect(() => {
     fetchCountry();
   }, []);
+  
   return (
     <div className="whole-countrybox">
       <Link to="/">
@@ -61,10 +62,10 @@ function Country() {
                   Capital: <span>{capital[0]}</span>
                 </p>
                 <p className="currency">
-                  Currencies: <span>{currencies.name}</span>
+                  Currencies: <span>{Object.keys(currencies)}</span>
                 </p>
                 <p>
-                  Languages: <span>{languages[0]}</span>
+                  Languages: <span>{Object.keys(languages)}</span>
                 </p>
               </div>
             </div>
