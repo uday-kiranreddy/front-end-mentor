@@ -47,9 +47,7 @@ function Country() {
               {loading && <h1 className="loader"></h1>}
               <div className="country-textbox">
                 <h2>{name.official}</h2>
-                <p>
-                  {/* Native Name : <span>{name.common}</span> */}
-                </p>
+              
                 <p>
                   Population : <span>{population}</span>
                 </p>
